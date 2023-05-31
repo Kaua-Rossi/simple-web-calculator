@@ -1,0 +1,171 @@
+.CalculatorBox {
+  width: 400px;
+  height: 450px;
+  background-image: linear-gradient(
+    to left,
+    rgb(149, 226, 226),
+    rgb(229, 255, 255)
+  );
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CalculatorBox .CalculatorResultBox {
+  margin: auto;
+  width: 390px;
+  height: 50px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+body {
+  font: lighter 25pt Bahnschrift;
+  background-image: linear-gradient(
+    to right,
+    rgb(160, 230, 252),
+    rgb(223, 106, 217)
+  );
+  margin: 20px;
+  display: flex;
+  user-select: none;
+}
+
+p#Res {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: text;
+}
+
+input#Add,
+input#Sub,
+input#Mult,
+input#Divis,
+input#Equals,
+input#C {
+  position: absolute;
+  margin: 20px;
+  border-radius: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(226, 255, 255);
+  border-color: pink;
+  font: lighter 20pt bahnschrift;
+}
+
+input#Add {
+  right: 75.5%;
+  top: 22.5%;
+}
+
+input#Sub {
+  right: 50.5%;
+  top: 22.5%;
+}
+
+input#Mult {
+  right: 25.5%;
+  top: 22.5%;
+}
+
+input#Divis {
+  right: 10.5%;
+  left: 75.5%;
+  top: 22.5%;
+}
+
+input#Equals {
+  right: 75.5%;
+  top: 57.5%;
+}
+
+input#C {
+  top: 40%;
+  right: 75.5%;
+}
+
+input#Dot,
+input#N0,
+input#N1,
+input#N2,
+input#N3,
+input#N4,
+input#N5,
+input#N6,
+input#N7,
+input#N8,
+input#N9 {
+  position: absolute;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgb(226, 255, 255);
+  border-color: pink;
+  width: 50px;
+  height: 50px;
+  font: lighter 20pt bahnschrift;
+}
+
+input#Dot {
+  top: 81%;
+  right: 75.5%;
+  height: 25px;
+  font-size: 15pt;
+}
+
+input#N0 {
+  top: 74%;
+  right: 75.5%;
+  height: 25px;
+  font-size: 15pt;
+}
+
+input#N1 {
+  top: 40%;
+  right: 50.5%;
+}
+
+input#N2 {
+  top: 40%;
+  right: 25.5%;
+}
+
+input#N3 {
+  top: 40%;
+  right: 10.5%;
+  left: 75.5%;
+}
+
+input#N4 {
+  top: 57.5%;
+  right: 50.5%;
+}
+
+input#N5 {
+  top: 57.5%;
+  right: 25.5%;
+}
+
+input#N6 {
+  top: 57.5%;
+  right: 10.5%;
+  left: 75.5%;
+}
+
+input#N7 {
+  right: 50.5%;
+  top: 75%;
+}
+
+input#N8 {
+  right: 25.5%;
+  top: 75%;
+}
+
+input#N9 {
+  top: 75%;
+  right: 10.5%;
+  left: 75.5%;
+}
