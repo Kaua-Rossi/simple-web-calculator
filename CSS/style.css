@@ -1,171 +1,70 @@
-.CalculatorBox {
+#calculatorContainer {
   width: 400px;
   height: 450px;
-  background-image: linear-gradient(
-    to left,
-    rgb(149, 226, 226),
-    rgb(229, 255, 255)
-  );
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: rgb(128, 156, 161);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 25, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
 }
 
-.CalculatorBox .CalculatorResultBox {
-  margin: auto;
-  width: 390px;
+#calculatorResultContainer {
+  width: 100%;
   height: 50px;
-  background-color: white;
-  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+#calculatorResultContainer p {
+  /*paunocu do p*/
+  margin: 8px;
+}
+
+#buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
 }
 
 body {
   font: lighter 25pt Bahnschrift;
-  background-image: linear-gradient(
-    to right,
-    rgb(160, 230, 252),
-    rgb(223, 106, 217)
-  );
+  background-color: rgb(61, 72, 76);
   margin: 20px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   user-select: none;
 }
 
-p#Res {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  user-select: text;
+header {
+  color: white;
+  font-size: 20pt;
 }
 
-input#Add,
-input#Sub,
-input#Mult,
-input#Divis,
-input#Equals,
-input#C {
-  position: absolute;
-  margin: 20px;
-  border-radius: 20px;
-  width: 50px;
-  height: 50px;
-  background-color: rgb(226, 255, 255);
-  border-color: pink;
-  font: lighter 20pt bahnschrift;
-}
-
-input#Add {
-  right: 75.5%;
-  top: 22.5%;
-}
-
-input#Sub {
-  right: 50.5%;
-  top: 22.5%;
-}
-
-input#Mult {
-  right: 25.5%;
-  top: 22.5%;
-}
-
-input#Divis {
-  right: 10.5%;
-  left: 75.5%;
-  top: 22.5%;
-}
-
-input#Equals {
-  right: 75.5%;
-  top: 57.5%;
-}
-
-input#C {
-  top: 40%;
-  right: 75.5%;
-}
-
-input#Dot,
-input#N0,
-input#N1,
-input#N2,
-input#N3,
-input#N4,
-input#N5,
-input#N6,
-input#N7,
-input#N8,
-input#N9 {
-  position: absolute;
-  margin: 20px;
-  border-radius: 20px;
-  background-color: rgb(226, 255, 255);
-  border-color: pink;
-  width: 50px;
-  height: 50px;
-  font: lighter 20pt bahnschrift;
-}
-
-input#Dot {
-  top: 81%;
-  right: 75.5%;
-  height: 25px;
+footer {
+  color: rgba(255, 255, 255, 0.556);
   font-size: 15pt;
+  font-style: italic;
 }
 
-input#N0 {
-  top: 74%;
-  right: 75.5%;
-  height: 25px;
-  font-size: 15pt;
+a {
+  color: gray;
 }
 
-input#N1 {
-  top: 40%;
-  right: 50.5%;
+input[type="button"] {
+  border-radius: 2px;
+  border-color: transparent;
+  font-size: 20pt;
+  font-family: bahnschrift;
 }
 
-input#N2 {
-  top: 40%;
-  right: 25.5%;
-}
-
-input#N3 {
-  top: 40%;
-  right: 10.5%;
-  left: 75.5%;
-}
-
-input#N4 {
-  top: 57.5%;
-  right: 50.5%;
-}
-
-input#N5 {
-  top: 57.5%;
-  right: 25.5%;
-}
-
-input#N6 {
-  top: 57.5%;
-  right: 10.5%;
-  left: 75.5%;
-}
-
-input#N7 {
-  right: 50.5%;
-  top: 75%;
-}
-
-input#N8 {
-  right: 25.5%;
-  top: 75%;
-}
-
-input#N9 {
-  top: 75%;
-  right: 10.5%;
-  left: 75.5%;
+#zeroAndDot {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3px;
 }
