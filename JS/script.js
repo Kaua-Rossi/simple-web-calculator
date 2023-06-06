@@ -1,5 +1,5 @@
 var Value1 = "";
-var OperationResult = window.document.getElementById("Res");
+var OperationResult = window.document.getElementById("textResult");
 
 OperationResult.innerText = Value1;
 
