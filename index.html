@@ -8,104 +8,56 @@
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
-    <div class="CalculatorBox">
-      <div class="CalculatorResultBox">
-        <p id="Res">0</p>
+    <header><h1>Web Calculator</h1></header>
+    <div id="calculatorContainer">
+      <div id="calculatorResultContainer">
+        <p id="textResult">0</p>
       </div>
-      <input
-        type="button"
-        value="+"
-        id="Add"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="-"
-        id="Sub"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="*"
-        id="Mult"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="/"
-        id="Divis"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input type="button" value="=" id="Equals" onclick="Result()" />
-      <input type="button" value="C" id="C" onclick="Erase()" />
-      <input
-        type="button"
-        value="."
-        id="Dot"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="0"
-        id="N0"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="1"
-        id="N1"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="2"
-        id="N2"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="3"
-        id="N3"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="4"
-        id="N4"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="5"
-        id="N5"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="6"
-        id="N6"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="7"
-        id="N7"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="8"
-        id="N8"
-        onclick="ButtonPressed(this.value)"
-      />
-      <input
-        type="button"
-        value="9"
-        id="N9"
-        onclick="ButtonPressed(this.value)"
-      />
+      <div id="buttonContainer">
+        <input type="button" value="+" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="-" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="*" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="/" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="=" onclick="Result()" />
+
+        <input type="button" value="C" onclick="Erase()" />
+
+        <div id="zeroAndDot">
+          <input type="button" value="." onclick="ButtonPressed(this.value)" />
+
+          <input type="button" value="0" onclick="ButtonPressed(this.value)" />
+        </div>
+
+        <input type="button" value="1" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="2" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="3" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="4" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="5" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="6" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="7" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="8" onclick="ButtonPressed(this.value)" />
+
+        <input type="button" value="9" onclick="ButtonPressed(this.value)" />
+      </div>
     </div>
+    <footer>
+      <p>Author: Kauã Rossi</p>
+      <p>GitHub: <a href="https://github.com/Kaua-Rossi">Kaua-Rossi</a></p>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+
     <script src="./JS/script.js"></script>
   </body>
 </html>
