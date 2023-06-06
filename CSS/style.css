@@ -18,7 +18,9 @@
 }
 
 #calculatorResultContainer p {
-  margin: 8px;
+  margin: auto;
+  margin-left: 3px;
+  margin-top: 3px;
 }
 
 #buttonContainer {
